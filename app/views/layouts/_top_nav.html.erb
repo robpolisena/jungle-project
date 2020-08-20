@@ -27,7 +27,10 @@
               <li><%= link_to category.name, category %></li>
             <% end %>
           </ul>
-        </li>
+        
+        
+        
+        
       </ul>
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
@@ -47,6 +50,15 @@
             <%= fa_icon "shopping-cart" %> My Cart (<%= cart.size %>)
           <% end %>
         </li>
+            
+        <% if current_user %>
+        <li class="logged-in"> Signed in as <%= current_user.name %> </li>  <li> <%= link_to "Logout", '/logout' %>
+        </li>
+      <% else %>
+      
+      <li>  <%= link_to 'Login', '/login' %> </li> <li>  <%= link_to 'Signup', '/signup' %> </li>
+      <% end %>
+      </li>
       </ul>
     </div>
   </div>

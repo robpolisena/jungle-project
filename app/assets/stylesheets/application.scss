@@ -11,6 +11,21 @@ body {
   padding-top: 70px;
 }
 
+.logged-in {
+  padding-top: 15px;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  width: 70%  
+}
+
+.signup-button {
+  margin-top: 15px;
+  
+}
+
 // Bootstrap adjustments
 form.button_to {
   display: inline;
