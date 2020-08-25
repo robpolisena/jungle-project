@@ -21,14 +21,13 @@ RSpec.feature "Visitor navigates to product detail page", type: :feature, js: tr
     # ACT
     visit root_path
     find("img[src*='apparel1.jpg']", match: :first).click
+
     # DEBUG
     save_screenshot('product_detail.png')
 
-    
     # VERIFY
     expect(page).to have_text("Quantity")
     expect(page).to have_text("10")
-    puts page.html
     save_screenshot('product_detail.png')
   end
 end
