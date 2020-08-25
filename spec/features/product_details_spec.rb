@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
+RSpec.feature "Visitor navigates to product detail page", type: :feature, js: true do
 
   # SETUP
   before :each do
@@ -17,14 +17,18 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
     end
   end
 
-  scenario "They see all products" do
+  scenario "see a product's detail page" do
     # ACT
     visit root_path
-
+    find("img[src*='apparel1.jpg']", match: :first).click
     # DEBUG
-    save_screenshot('home_page.png')
+    save_screenshot('product_detail.png')
 
+    
     # VERIFY
-    expect(page).to have_css 'article.product', count: 10
+    expect(page).to have_text("Quantity")
+    expect(page).to have_text("10")
+    puts page.html
+    save_screenshot('product_detail.png')
   end
 end
