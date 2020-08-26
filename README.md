@@ -25,3 +25,10 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Screen Shots
+
+!["Screenshot of home page"](https://github.com/robpolisena/jungle-project/blob/master/docs/Screen%20Shot%20home-page.png)
+!["Screenshot of cart page"](https://github.com/robpolisena/jungle-project/blob/master/docs/Screen%20Shot%20my-cart.png)
+!["Screenshot of order page"](https://github.com/robpolisena/jungle-project/blob/master/docs/Screen%20Shot%20order-total.png)
+!["Screenshot of product detail"](https://github.com/robpolisena/jungle-project/blob/master/docs/Screen%20Shot%20product-detail.png)
